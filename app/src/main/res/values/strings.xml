@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeNews</string>
+    <string name="skip_name">跳过</string>
+    <string name="load_end">没有更多数据</string>
+    <string name="load_failed">加载失败，请点我重试</string>
+    <string name="loading">正在加载中...</string>
+    <string name="text_empty">"没有数据"</string>
+    <string name="text_nonet">没有网络</string>
+    <string name="text_loading">加载中...</string>
+    <string name="news_toast">已为您推荐了%1$s条新资讯</string>
+</resources>

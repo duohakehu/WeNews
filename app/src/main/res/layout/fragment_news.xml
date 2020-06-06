@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1.0dp"
+        android:background="@color/app_color_orange"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_color_orange">
+
+
+        <TextView
+            android:id="@+id/tv_news_wei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:text="WE"
+            android:textSize="20sp"
+            android:textColor="@color/config_color_white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_news_xun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_news_wei"
+            android:layout_marginLeft="2dp"
+            android:text="NEWS"
+            android:textSize="20sp"
+            android:textColor="@color/config_color_white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/tv_news_xun"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/color_write"
+            android:text="搜索"
+            android:textSize="14sp"
+            android:textColor="@color/config_color_base_9"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/config_color_white">
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/SlidingTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/iv_edit"
+            tl:tl_tab_width="48dp"
+            tl:tl_textSelectColor="@color/app_color_orange"
+            tl:tl_textUnselectColor="@color/config_color_base_6"
+            tl:tl_indicator_style="TRIANGLE"
+            tl:tl_indicator_width="36dp"
+            tl:tl_textsize="16sp"
+            tl:tl_textBold="SELECT"/>
+
+        <ImageView
+            android:id="@id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/config_color_75_white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_add_channel"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/color_line" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

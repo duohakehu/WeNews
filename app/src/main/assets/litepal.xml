@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="wenewsdb">
+    </dbname>
+    <version value="2">
+    </version>
+    <list>
+        <mapping class="com.nuaa.cgn.wenews.model.entity.Channel">
+        </mapping>
+    </list>
+
+</litepal>
