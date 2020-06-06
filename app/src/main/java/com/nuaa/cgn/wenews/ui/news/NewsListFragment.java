@@ -37,7 +37,9 @@ import in.srain.cube.views.ptr.PtrHandler;
  */
 
 public class NewsListFragment extends BaseFragment<NewsListPresenter> implements NewsListContract.View{
-
+    /**
+     * 测试本地分支
+     */
     @BindView(R.id.mPtrFrameLayout)
     PtrFrameLayout mPtrFrameLayout;
     @BindView(R.id.mRecyclerView)
